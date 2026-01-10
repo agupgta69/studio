@@ -1,6 +1,6 @@
-import { Twitter, Linkedin, Github, Building2, Users } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Twitter, Linkedin, Github } from "lucide-react";
 
 export function Footer() {
   return (
