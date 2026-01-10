@@ -28,14 +28,6 @@ export function Header() {
             <nav className="flex items-center space-x-6 text-sm font-medium">
               {/* Future nav links can go here */}
             </nav>
-            <div className="flex items-center space-x-2">
-              <Button variant="ghost" asChild>
-                <Link href="/login">Log In</Link>
-              </Button>
-              <Button asChild style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
-                <Link href="/register">Sign Up</Link>
-              </Button>
-            </div>
           </div>
 
           <div className="md:hidden">
@@ -55,14 +47,6 @@ export function Header() {
                       OrcaS Solutions
                     </span>
                   </Link>
-                  <div className="flex flex-col space-y-4">
-                    <Button variant="outline" asChild>
-                      <Link href="/login">Log In</Link>
-                    </Button>
-                    <Button asChild style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}>
-                      <Link href="/register">Sign Up</Link>
-                    </Button>
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>
