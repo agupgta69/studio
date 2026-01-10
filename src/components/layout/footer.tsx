@@ -8,7 +8,7 @@ export function Footer() {
           <div className="flex items-center space-x-2">
             <BookOpen className="h-6 w-6 text-muted-foreground" />
             <span className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Orcas Solutions. All Rights Reserved.
+              &copy; {new Date().getFullYear()} OrcaS Solutions. All Rights Reserved.
             </span>
           </div>
           <div className="flex items-center space-x-4">

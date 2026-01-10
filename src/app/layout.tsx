@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Orcas Solutions',
+  title: 'OrcaS Solutions',
   description: 'Insights on business, technology, and design.',
 };
 

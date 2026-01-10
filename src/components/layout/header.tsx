@@ -18,7 +18,7 @@ export function Header() {
             <Link href="/" className="flex items-center space-x-2">
               <BookOpen className="h-7 w-7 text-primary" />
               <span className="font-headline text-xl font-bold">
-                Orcas Solutions
+                OrcaS Solutions
               </span>
             </Link>
           </div>
@@ -50,7 +50,7 @@ export function Header() {
                   <Link href="/" className="flex items-center space-x-2">
                     <BookOpen className="h-7 w-7 text-primary" />
                     <span className="font-headline text-xl font-bold">
-                      Orcas Solutions
+                      OrcaS Solutions
                     </span>
                   </Link>
                   <div className="flex flex-col space-y-4">
