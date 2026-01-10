@@ -50,7 +50,7 @@ export default function Home() {
           OrcaS Solutions Insights
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Your curated knowledge hub for the latest in business, technology, and design.
+          Your one-stop shop for manpower solutions and real estate requirements
         </p>
       </div>
 
