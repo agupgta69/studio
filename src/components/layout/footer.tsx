@@ -1,4 +1,4 @@
-import { Building2, Twitter, Linkedin, Github } from "lucide-react";
+import { Building2, Twitter, Linkedin, Github, Users } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,6 +7,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2">
             <Building2 className="h-6 w-6 text-muted-foreground" />
+            <Users className="h-6 w-6 text-muted-foreground" />
             <span className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} OrcaS Solutions. All Rights Reserved.
             </span>

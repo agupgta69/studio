@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Building2, User, Menu } from "lucide-react";
+import { Building2, User, Menu, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -17,6 +17,7 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
               <Building2 className="h-7 w-7 text-primary" />
+              <Users className="h-7 w-7 text-primary" />
               <span className="font-headline text-xl font-bold">
                 OrcaS Solutions
               </span>
@@ -49,6 +50,7 @@ export function Header() {
                 <div className="flex flex-col space-y-6 pt-10">
                   <Link href="/" className="flex items-center space-x-2">
                     <Building2 className="h-7 w-7 text-primary" />
+                    <Users className="h-7 w-7 text-primary" />
                     <span className="font-headline text-xl font-bold">
                       OrcaS Solutions
                     </span>
