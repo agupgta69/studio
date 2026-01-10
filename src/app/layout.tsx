@@ -5,7 +5,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Talentbridge Insights',
+  title: 'Orcas Solutions',
   description: 'Insights on business, technology, and design.',
 };
 
