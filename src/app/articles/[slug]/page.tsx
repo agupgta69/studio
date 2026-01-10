@@ -3,7 +3,6 @@ import Image from "next/image";
 import { allArticles } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
 
 type ArticlePageProps = {
   params: {
@@ -18,19 +17,31 @@ export async function generateStaticParams() {
 }
 
 const renderContent = (content: string) => {
-  const parts = content.split(/(\n\n\*\*Our Services Cover:\*\*.*?\n\n)/s);
-  return parts.map((part, index) => {
-    if (part.includes("**Our Services Cover:**")) {
-      const listItems = part
-        .replace("**Our Services Cover:**", "")
-        .trim()
-        .split("\n")
-        .filter(item => item.startsWith("- "))
-        .map(item => item.substring(2).trim());
-      
+  const sections = content.split(/\n\n/);
+
+  return sections.map((section, index) => {
+    if (section.startsWith('**') && section.endsWith('**')) {
+      return <h3 key={index} className="font-bold text-xl mt-4">{section.replace(/\*\*/g, '')}</h3>;
+    }
+    if (section.startsWith('- ')) {
+      const listItems = section.split('\n').map(item => item.replace('- ', '').trim());
       return (
+        <ul key={index} className="list-disc pl-5 space-y-2 my-4">
+          {listItems.map((item, i) => <li key={i}>{item}</li>)}
+        </ul>
+      );
+    }
+     if (section.startsWith('📞')) {
+      return <p key={index} className="mt-4">{section}</p>;
+    }
+    const listRegex = /\n- /;
+    if(listRegex.test(section)){
+        const sectionParts = section.split(listRegex);
+        const heading = sectionParts[0];
+        const listItems = sectionParts.slice(1).map(item => item.trim());
+         return (
         <div key={index}>
-          <p><strong>Our Services Cover:</strong></p>
+          <p>{heading}</p>
           <ul className="list-disc pl-5 space-y-2 my-4">
             {listItems.map((item, i) => (
               <li key={i}>{item}</li>
@@ -39,7 +50,8 @@ const renderContent = (content: string) => {
         </div>
       );
     }
-    return part.split('\n').map((paragraph, pIndex) => (
+    
+    return section.split('\n').map((paragraph, pIndex) => (
       paragraph.trim() ? <p key={`${index}-${pIndex}`}>{paragraph}</p> : null
     ));
   });
