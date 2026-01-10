@@ -22,14 +22,4 @@ export const allArticles: Article[] = [
     category: "Real Estate Channel Partner",
     topics: ["AI", "Machine Learning", "Innovation"],
   },
-  {
-    id: "4",
-    slug: "sustainable-business-practices",
-    title: "Building a Better Business: The Rise of Sustainability",
-    excerpt: "Why integrating sustainable practices is no longer just good for the planet, but essential for long-term business success.",
-    content: "In today's conscious consumer market, sustainability has evolved from a niche concern to a core business imperative. Companies are increasingly recognizing that environmental, social, and governance (ESG) factors are directly linked to financial performance. Sustainable practices, such as reducing carbon emissions, minimizing waste, and ensuring ethical supply chains, can lead to significant cost savings, improved brand reputation, and increased customer loyalty. Investors are also placing a higher value on companies with strong ESG credentials, viewing them as less risky and better positioned for long-term growth. The shift requires more than just 'greenwashing'; it demands a fundamental rethinking of business models to create a 'triple bottom line' that values people, planet, and profit equally. Leaders in this space, like Patagonia and IKEA, have demonstrated that a commitment to sustainability can be a powerful driver of innovation and market leadership.",
-    imageId: "startup-growth",
-    category: "Staffing",
-    topics: ["ESG", "Corporate Responsibility", "Strategy"],
-  },
 ];
