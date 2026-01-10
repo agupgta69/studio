@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
-import { Menu, Mountain } from "lucide-react";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -11,8 +12,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Mountain className="h-8 w-8 text-primary" />
-              <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
+              <Image
+                src="/Print_Transparent.svg"
+                alt="OrcaS Solutions Logo"
+                width={140}
+                height={40}
+                priority
+              />
             </Link>
           </div>
 
@@ -33,8 +39,12 @@ export function Header() {
               <SheetContent side="right">
                 <div className="flex flex-col space-y-6 pt-10">
                    <Link href="/" className="flex items-center space-x-2">
-                     <Mountain className="h-8 w-8 text-primary" />
-                     <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
+                     <Image
+                        src="/Print_Transparent.svg"
+                        alt="OrcaS Solutions Logo"
+                        width={140}
+                        height={40}
+                      />
                    </Link>
                 </div>
               </SheetContent>
