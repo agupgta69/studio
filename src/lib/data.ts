@@ -42,14 +42,4 @@ export const allArticles: Article[] = [
     category: "Real Estate Channel Partner",
     topics: ["Quantum Computing", "Innovation", "Future Tech"],
   },
-  {
-    id: "6",
-    slug: "design-thinking-for-problem-solving",
-    title: "Solving Problems with Design Thinking",
-    excerpt: "How to apply the principles of design thinking to tackle complex challenges in any field, not just design.",
-    content: "Design thinking is a human-centered, iterative process for creative problem-solving. While it originated in the design world, its principles can be applied to almost any complex problem, from business strategy to social change. The process typically involves five stages: Empathize, Define, Ideate, Prototype, and Test. It starts with developing a deep understanding of the people you're designing for (Empathize). This is followed by clearly articulating the problem you want to solve (Define). Then, you brainstorm a wide range of potential solutions (Ideate). The next step is to build inexpensive, scaled-down versions of the solutions to investigate the ideas you've generated (Prototype). Finally, you test your prototypes with users to gather feedback and refine your solution (Test). This cyclical process encourages experimentation, embraces failure as a learning opportunity, and ensures that the final solution is truly user-centric and effective.",
-    imageId: "ux-research",
-    category: "Design",
-    topics: ["Problem Solving", "Innovation", "Methodology"],
-  },
 ];
