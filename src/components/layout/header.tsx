@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Menu, Mountain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
+import NextImage from "next/image";
 export function Header() {
   return (
     <header className="bg-card border-b sticky top-0 z-50">
@@ -11,7 +11,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Mountain className="h-8 w-8 text-primary" />
+            <NextImage
+  src="/Print_Transparent.svg"
+  alt="Orcas Solutions Logo"
+  width={150}
+  height={100}
+  priority
+/>
               <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
             </Link>
           </div>
