@@ -5,7 +5,7 @@ export type Article = {
   excerpt: string;
   content: string;
   imageId: string;
-  category: "Staffing" | "Technology" | "Design";
+  category: "Staffing" | "Real Estate Channel Partner" | "Design";
   topics: string[];
   lastRead?: string;
 };

@@ -19,7 +19,7 @@ export const allArticles: Article[] = [
     excerpt: "From your morning commute to your evening entertainment, artificial intelligence is more integrated into our lives than ever before.",
     content: "Artificial intelligence (AI) is no longer the stuff of science fiction. It's a powerful technology that has quietly woven itself into the fabric of our daily routines. When you ask Siri for the weather, get a movie recommendation from Netflix, or see a personalized ad on social media, you're interacting with AI. Machine learning algorithms power everything from spam filters in your email to the fraud detection systems that protect your credit card. In healthcare, AI is helping doctors diagnose diseases earlier and more accurately. In transportation, it's the driving force behind the development of autonomous vehicles. While the prospect of super-intelligent AI raises valid ethical questions, the practical applications we use today are largely designed to make our lives easier, safer, and more efficient. Understanding the basics of how this technology works is becoming increasingly important for navigating the modern world.",
     imageId: "ai-concept",
-    category: "Technology",
+    category: "Real Estate Channel Partner",
     topics: ["AI", "Machine Learning", "Innovation"],
   },
   {
@@ -49,7 +49,7 @@ export const allArticles: Article[] = [
     excerpt: "A primer on the next frontier of computing and its potential to solve some of the world's most complex problems.",
     content: "Quantum computing represents a fundamental shift from the classical computers we use today. While classical computers store information in bits as either 0s or 1s, quantum computers use qubits. Thanks to the principles of superposition and entanglement, a qubit can be a 0, a 1, or both at the same time. This allows quantum computers to process a massive number of calculations simultaneously. Their potential is staggering. They could revolutionize medicine by simulating molecules to discover new drugs, create new materials with incredible properties, and break current encryption standards, forcing a new era of secure communication. While large-scale, fault-tolerant quantum computers are still years away, the progress in the field is accelerating rapidly. Companies like Google, IBM, and a host of startups are in a race to build more powerful quantum machines, heralding a new era of technological capability.",
     imageId: "tech-abstract",
-    category: "Technology",
+    category: "Real Estate Channel Partner",
     topics: ["Quantum Computing", "Innovation", "Future Tech"],
   },
   {
