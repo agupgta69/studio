@@ -8,7 +8,7 @@ export const allArticles: Article[] = [
     excerpt: "Exploring how companies are blending remote and in-office work to create a more flexible and productive environment.",
     content: "The COVID-19 pandemic acted as a massive, unplanned experiment in remote work, forcing companies worldwide to adapt. As we move into a post-pandemic era, it's clear that the 9-to-5, five-days-a-week office culture is a thing of the past for many. The new norm is the hybrid model, a flexible approach that combines in-office and remote work. This model promises the best of both worlds: the autonomy and flexibility of working from home, with the collaboration and social connection of the office. Companies like Google, Microsoft, and Salesforce are leading the charge, implementing policies that allow employees to choose how and where they work best. The key challenges lie in maintaining a cohesive company culture, ensuring equitable opportunities for all employees regardless of location, and equipping teams with the right technology to collaborate seamlessly. Success in the hybrid future will depend on trust, communication, and a willingness to iterate on what works for each unique organization.",
     imageId: "business-meeting",
-    category: "Business",
+    category: "Staffing",
     topics: ["Future of Work", "Productivity", "Management"],
     lastRead: "2 days ago",
   },
@@ -39,7 +39,7 @@ export const allArticles: Article[] = [
     excerpt: "Why integrating sustainable practices is no longer just good for the planet, but essential for long-term business success.",
     content: "In today's conscious consumer market, sustainability has evolved from a niche concern to a core business imperative. Companies are increasingly recognizing that environmental, social, and governance (ESG) factors are directly linked to financial performance. Sustainable practices, such as reducing carbon emissions, minimizing waste, and ensuring ethical supply chains, can lead to significant cost savings, improved brand reputation, and increased customer loyalty. Investors are also placing a higher value on companies with strong ESG credentials, viewing them as less risky and better positioned for long-term growth. The shift requires more than just 'greenwashing'; it demands a fundamental rethinking of business models to create a 'triple bottom line' that values people, planet, and profit equally. Leaders in this space, like Patagonia and IKEA, have demonstrated that a commitment to sustainability can be a powerful driver of innovation and market leadership.",
     imageId: "startup-growth",
-    category: "Business",
+    category: "Staffing",
     topics: ["ESG", "Corporate Responsibility", "Strategy"],
   },
   {

@@ -5,7 +5,7 @@ export type Article = {
   excerpt: string;
   content: string;
   imageId: string;
-  category: "Business" | "Technology" | "Design";
+  category: "Staffing" | "Technology" | "Design";
   topics: string[];
   lastRead?: string;
 };
