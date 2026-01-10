@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Building2, Users } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -11,11 +11,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Building2 className="h-6 w-6" />
-              <Users className="h-6 w-6" />
-              <span className="font-bold font-headline text-lg">
-                OrcaS Solutions
-              </span>
+              <Image 
+                src="/logo.png"
+                alt="OrcaS Solutions Logo"
+                width={120}
+                height={40}
+                className="object-contain"
+              />
             </Link>
           </div>
 
@@ -35,12 +37,14 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="flex flex-col space-y-6 pt-10">
-                  <Link href="/" className="flex items-center space-x-2">
-                     <Building2 className="h-8 w-8" />
-                     <Users className="h-8 w-8" />
-                     <span className="font-bold font-headline text-2xl">
-                      OrcaS Solutions
-                     </span>
+                  <Link href="/">
+                    <Image 
+                      src="/logo.png"
+                      alt="OrcaS Solutions Logo"
+                      width={150}
+                      height={50}
+                      className="object-contain"
+                    />
                   </Link>
                 </div>
               </SheetContent>

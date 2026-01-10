@@ -1,5 +1,6 @@
-import { Twitter, Linkedin, Github, Building2, Users } from "lucide-react";
+import { Twitter, Linkedin, Github } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,8 +9,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-                <Building2 className="h-6 w-6" />
-                <Users className="h-6 w-6" />
+                <Image 
+                  src="/logo.png"
+                  alt="OrcaS Solutions Logo"
+                  width={100}
+                  height={32}
+                  className="object-contain"
+                />
             </Link>
             <span className="text-sm text-muted-foreground pl-4 border-l border-muted">
               &copy; {new Date().getFullYear()} OrcaS Solutions. All Rights Reserved.
