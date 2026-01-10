@@ -3,9 +3,9 @@ import type { Article } from "./types";
 export const allArticles: Article[] = [
   {
     id: "1",
-    slug: "workforce-solutions",
-    title: "Workforce Solutions for a Modern Era",
-    excerpt: "Orcas Recruitment Services is a fast-growing Permanent Staffing company in India, delivering customized recruitment solutions.",
+    slug: "orcas-recruitment-services",
+    title: "Orcas Recruitment Services",
+    excerpt: "A fast-growing Permanent Staffing company in India, delivering customized recruitment solutions.",
     content: "Orcas Recruitment Services is a fast-growing Permanent Staffing company in India, delivering customized recruitment solutions that connect high-caliber professionals with your organization’s long-term vision.",
     imageId: "business-meeting",
     category: "Staffing",
