@@ -25,13 +25,13 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-col md:flex-row gap-4 items-center">
-        <div className="relative flex-grow w-full">
+      <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="relative flex-grow w-full sm:w-auto">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="search"
             placeholder="Search articles..."
-            className="w-full pl-10"
+            className="w-full sm:w-64 pl-10"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
