@@ -18,7 +18,7 @@ export const allArticles: Article[] = [
     title: "Best Real Estate Agents in Bangalore & Hyderabad | Pre-Launch & Upcoming Residential Projects",
     excerpt: "Looking to invest in residential properties in Bangalore or Hyderabad? You’re at the right place.",
     content: "OrcaS Realty is a young, dynamic real estate marketing agency based in Bangalore, driven by professionals committed to delivering transparent, value-driven property solutions. We specialize in connecting developers, homebuyers, financial institutions, and interior designers, creating a seamless ecosystem that delivers end-to-end services under one roof.\n\nWe help you identify the right property—whether for living or investment—backed by market insights, trusted developer tie-ups, and personalized guidance at every stage of your journey.\n\nOur Services Cover:\n\nPre-Launch & Upcoming Apartments\nPremium Apartments\nRow Houses & Villas\nIndependent Villas\nResidential Plots\nFarmhouses & Farm Villas\nHigh-Return Investment Homes\n\nWith operations across Bangalore and Hyderabad, OrcaS Realty ensures a smooth, trustworthy, and rewarding real estate experience—from property discovery to final handover and beyond.\n\n📞 Connect with us today and let us help you make the right property move.",
-    imageId: "ai-concept",
+    imageId: "real-estate-agent",
     category: "Real Estate Channel Partner",
     topics: ["Real Estate", "Investment", "Bangalore", "Hyderabad"],
     lastRead: "1 day ago",
