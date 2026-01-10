@@ -3,9 +3,9 @@ import type { Article } from "./types";
 export const allArticles: Article[] = [
   {
     id: "1",
-    slug: "the-future-of-remote-work",
-    title: "The Future of Remote Work: A Hybrid Approach",
-    excerpt: "Exploring how companies are blending remote and in-office work to create a more flexible and productive environment.",
+    slug: "workforce-solutions",
+    title: "Workforce Solutions for a Modern Era",
+    excerpt: "Discover workforce solutions designed to empower your entire team, from staffing to management.",
     content: "Workforce solutions designed to empower everyone",
     imageId: "business-meeting",
     category: "Staffing",
