@@ -11,7 +11,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
+              <Image src="/logo.png" alt="OrcaS Solutions Logo" width={140} height={40} priority />
             </Link>
           </div>
 
@@ -32,7 +32,7 @@ export function Header() {
               <SheetContent side="right">
                 <div className="flex flex-col space-y-6 pt-10">
                    <Link href="/" className="flex items-center space-x-2">
-                      <span className="font-bold text-xl font-headline">OrcaS Solutions</span>
+                      <Image src="/logo.png" alt="OrcaS Solutions Logo" width={140} height={40} />
                    </Link>
                 </div>
               </SheetContent>
