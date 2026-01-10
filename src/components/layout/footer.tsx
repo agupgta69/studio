@@ -1,20 +1,32 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
 import { Twitter, Linkedin, Github } from "lucide-react";
+import { useState } from "react";
 
 export function Footer() {
+  const [logoError, setLogoError] = useState(false);
+
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-                <Image
-                  src="/orcas_logo.png"
-                  alt="OrcaS Solutions Logo"
-                  width={24}
-                  height={24}
-                />
+                {!logoError ? (
+                  <Image
+                    src="/orcas_logo.png"
+                    alt="OrcaS Solutions Logo"
+                    width={24}
+                    height={24}
+                    onError={() => {
+                      console.error("Footer logo failed to load from /orcas_logo.png");
+                      setLogoError(true);
+                    }}
+                  />
+                ) : (
+                  <div style={{ width: 24, height: 24 }} />
+                )}
                 <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
             </Link>
             <span className="text-sm text-muted-foreground pl-4 border-l border-muted">

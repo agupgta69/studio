@@ -1,22 +1,34 @@
+'use client';
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 export function Header() {
+  const [logoError, setLogoError] = useState(false);
+
   return (
     <header className="bg-card border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/orcas_logo.png"
-                alt="OrcaS Solutions Logo"
-                width={32}
-                height={32}
-              />
+              {!logoError ? (
+                <Image
+                  src="/orcas_logo.png"
+                  alt="OrcaS Solutions Logo"
+                  width={32}
+                  height={32}
+                  onError={() => {
+                    console.error("Header logo failed to load from /orcas_logo.png");
+                    setLogoError(true);
+                  }}
+                />
+              ) : (
+                <div style={{ width: 32, height: 32 }} />
+              )}
               <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
             </Link>
           </div>
@@ -38,12 +50,17 @@ export function Header() {
               <SheetContent side="right">
                 <div className="flex flex-col space-y-6 pt-10">
                    <Link href="/" className="flex items-center space-x-2">
-                     <Image
-                        src="/orcas_logo.png"
-                        alt="OrcaS Solutions Logo"
-                        width={32}
-                        height={32}
-                      />
+                     {!logoError ? (
+                       <Image
+                          src="/orcas_logo.png"
+                          alt="OrcaS Solutions Logo"
+                          width={32}
+                          height={32}
+                          onError={() => setLogoError(true)}
+                        />
+                      ) : (
+                        <div style={{ width: 32, height: 32 }} />
+                      )}
                      <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
                    </Link>
                 </div>
