@@ -32,14 +32,4 @@ export const allArticles: Article[] = [
     category: "Staffing",
     topics: ["ESG", "Corporate Responsibility", "Strategy"],
   },
-  {
-    id: "5",
-    slug: "the-quantum-computing-leap",
-    title: "The Quantum Leap: What is Quantum Computing?",
-    excerpt: "A primer on the next frontier of computing and its potential to solve some of the world's most complex problems.",
-    content: "Quantum computing represents a fundamental shift from the classical computers we use today. While classical computers store information in bits as either 0s or 1s, quantum computers use qubits. Thanks to the principles of superposition and entanglement, a qubit can be a 0, a 1, or both at the same time. This allows quantum computers to process a massive number of calculations simultaneously. Their potential is staggering. They could revolutionize medicine by simulating molecules to discover new drugs, create new materials with incredible properties, and break current encryption standards, forcing a new era of secure communication. While large-scale, fault-tolerant quantum computers are still years away, the progress in the field is accelerating rapidly. Companies like Google, IBM, and a host of startups are in a race to build more powerful quantum machines, heralding a new era of technological capability.",
-    imageId: "tech-abstract",
-    category: "Real Estate Channel Partner",
-    topics: ["Quantum Computing", "Innovation", "Future Tech"],
-  },
 ];
