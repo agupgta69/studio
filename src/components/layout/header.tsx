@@ -11,13 +11,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Image 
-                src="/logo.png"
-                alt="OrcaS Solutions Logo"
-                width={120}
-                height={40}
-                className="object-contain"
-              />
+              <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
             </Link>
           </div>
 
@@ -37,15 +31,9 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="flex flex-col space-y-6 pt-10">
-                  <Link href="/">
-                    <Image 
-                      src="/logo.png"
-                      alt="OrcaS Solutions Logo"
-                      width={150}
-                      height={50}
-                      className="object-contain"
-                    />
-                  </Link>
+                   <Link href="/" className="flex items-center space-x-2">
+                      <span className="font-bold text-xl font-headline">OrcaS Solutions</span>
+                   </Link>
                 </div>
               </SheetContent>
             </Sheet>
