@@ -3,7 +3,6 @@ import Image from "next/image";
 import { allArticles } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
-import { Summarizer } from "@/components/content/summarizer";
 import { Separator } from "@/components/ui/separator";
 
 type ArticlePageProps = {
@@ -84,19 +83,6 @@ export default function ArticlePage({ params }: ArticlePageProps) {
       <div className="prose prose-lg dark:prose-invert max-w-none mb-12 space-y-4">
         {renderContent(article.content)}
       </div>
-
-      <Separator className="my-12" />
-
-      <div>
-        <h2 className="text-2xl font-headline font-semibold mb-4">
-          Too long; didn't read?
-        </h2>
-        <p className="text-muted-foreground mb-4">
-          Let AI give you a quick summary of the key points.
-        </p>
-        <Summarizer content={article.content} />
-      </div>
-
     </article>
   );
 }
