@@ -47,7 +47,7 @@ export default function Home() {
     <div className="space-y-8">
       <div className="text-center space-y-4">
         <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight">
-          Explore Insights
+          OrcaS Solutions Insights
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Your curated knowledge hub for the latest in business, technology, and design.
