@@ -18,6 +18,35 @@ export async function generateStaticParams() {
   }));
 }
 
+const renderContent = (content: string) => {
+  const parts = content.split(/(\n\n\*\*Our Services Cover:\*\*.*?\n\n)/s);
+  return parts.map((part, index) => {
+    if (part.includes("**Our Services Cover:**")) {
+      const listItems = part
+        .replace("**Our Services Cover:**", "")
+        .trim()
+        .split("\n")
+        .filter(item => item.startsWith("- "))
+        .map(item => item.substring(2).trim());
+      
+      return (
+        <div key={index}>
+          <p><strong>Our Services Cover:</strong></p>
+          <ul className="list-disc pl-5 space-y-2 my-4">
+            {listItems.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+    return part.split('\n').map((paragraph, pIndex) => (
+      paragraph.trim() ? <p key={`${index}-${pIndex}`}>{paragraph}</p> : null
+    ));
+  });
+};
+
+
 export default function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = params;
   const article = allArticles.find((a) => a.slug === slug);
@@ -53,9 +82,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
       )}
 
       <div className="prose prose-lg dark:prose-invert max-w-none mb-12 space-y-4">
-        {article.content.split('\\n').map((paragraph, index) => (
-          <p key={index}>{paragraph.startsWith('- ') ? `• ${paragraph.substring(2)}` : paragraph}</p>
-        ))}
+        {renderContent(article.content)}
       </div>
 
       <Separator className="my-12" />
