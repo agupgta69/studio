@@ -23,16 +23,6 @@ export const allArticles: Article[] = [
     topics: ["AI", "Machine Learning", "Innovation"],
   },
   {
-    id: "3",
-    slug: "principles-of-minimalist-design",
-    title: "The Enduring Power of Minimalist Design",
-    excerpt: "Why 'less is more' continues to be a powerful principle in creating effective and beautiful user experiences.",
-    content: "Minimalist design is more than just an aesthetic; it's a philosophy. Rooted in the idea that 'less is more,' it prioritizes simplicity, clarity, and functionality. By stripping away non-essential elements, designers can create user interfaces that are intuitive, efficient, and visually calming. This approach forces a focus on the core content and functionality, ensuring that every element on the screen serves a purpose. Key principles include the use of negative space (or whitespace) to create breathing room and visual hierarchy, a limited and intentional color palette, and clean, legible typography. Famous examples range from the iconic hardware designs of Apple to the clean interface of Google's search page. In a world saturated with information and visual noise, minimalism offers a refreshing sense of order and focus, making it a timeless strategy for effective communication and user-centric design.",
-    imageId: "design-process",
-    category: "Design",
-    topics: ["UI/UX", "Web Design", "Aesthetics"],
-  },
-  {
     id: "4",
     slug: "sustainable-business-practices",
     title: "Building a Better Business: The Rise of Sustainability",
