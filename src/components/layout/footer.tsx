@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Twitter, Linkedin, Github } from "lucide-react";
-import OrcasLogo from "@/assets/orcas_logo.png";
+import { Twitter, Linkedin, Github, Mountain } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-                <Image src={OrcasLogo} alt="Orcas Solutions Logo" width={24} height={24} />
+                <Mountain className="h-6 w-6" />
                 <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
             </Link>
             <span className="text-sm text-muted-foreground pl-4 border-l border-muted">
