@@ -17,43 +17,69 @@ export async function generateStaticParams() {
 }
 
 const renderContent = (content: string) => {
-  const sections = content.split(/\n\n/);
+  return content.split('\n').map((paragraph, index) => {
+    if (paragraph.trim() === '') return null;
 
-  return sections.map((section, index) => {
-    if (section.startsWith('**') && section.endsWith('**')) {
-      return <h3 key={index} className="font-bold text-xl mt-4">{section.replace(/\*\*/g, '')}</h3>;
+    if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+      return (
+        <h3 key={index} className="font-bold text-xl mt-4">
+          {paragraph.replace(/\*\*/g, '')}
+        </h3>
+      );
     }
-    if (section.startsWith('- ')) {
-      const listItems = section.split('\n').map(item => item.replace('- ', '').trim());
+    
+    if (paragraph.startsWith('- ')) {
+      const listItems = paragraph.split('\n').map(item => item.replace(/^- /, '').trim());
       return (
         <ul key={index} className="list-disc pl-5 space-y-2 my-4">
           {listItems.map((item, i) => <li key={i}>{item}</li>)}
         </ul>
       );
     }
-     if (section.startsWith('📞')) {
-      return <p key={index} className="mt-4">{section}</p>;
+
+    if (paragraph.startsWith('📞')) {
+      return <p key={index} className="mt-4">{paragraph}</p>;
     }
+    
+    // Split by sections that should become lists
     const listRegex = /\n- /;
-    if(listRegex.test(section)){
-        const sectionParts = section.split(listRegex);
-        const heading = sectionParts[0];
-        const listItems = sectionParts.slice(1).map(item => item.trim());
-         return (
+    if (listRegex.test(paragraph)) {
+      const parts = paragraph.split(listRegex);
+      const heading = parts[0];
+      const listItems = [parts[0].split('\n').pop(), ...parts.slice(1)].filter(i => i && i.startsWith('- '));
+      
+      const contentBeforeList = paragraph.split(heading)[0];
+
+      return (
         <div key={index}>
-          <p>{heading}</p>
+          <p>{contentBeforeList}</p>
+          <p>{heading.split('\n')[0]}</p>
           <ul className="list-disc pl-5 space-y-2 my-4">
-            {listItems.map((item, i) => (
-              <li key={i}>{item}</li>
+            {paragraph.split('\n- ').slice(1).map((item, i) => (
+              <li key={i}>{item.trim()}</li>
             ))}
           </ul>
         </div>
       );
     }
     
-    return section.split('\n').map((paragraph, pIndex) => (
-      paragraph.trim() ? <p key={`${index}-${pIndex}`}>{paragraph}</p> : null
-    ));
+    if (paragraph.includes('\n- ')) {
+         const sectionParts = paragraph.split('\n- ');
+         const heading = sectionParts[0];
+         const listItems = sectionParts.slice(1).map(item => item.trim());
+         return (
+           <div key={index}>
+             <p>{heading}</p>
+             <ul className="list-disc pl-5 space-y-2 my-4">
+               {listItems.map((item, i) => (
+                 <li key={i}>{item}</li>
+               ))}
+             </ul>
+           </div>
+         );
+    }
+    
+    return <p key={index}>{paragraph}</p>;
   });
 };
 
