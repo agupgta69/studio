@@ -52,8 +52,10 @@ export default function ArticlePage({ params }: ArticlePageProps) {
         </div>
       )}
 
-      <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
-        <p>{article.content}</p>
+      <div className="prose prose-lg dark:prose-invert max-w-none mb-12 space-y-4">
+        {article.content.split('\\n').map((paragraph, index) => (
+          <p key={index}>{paragraph.startsWith('- ') ? `• ${paragraph.substring(2)}` : paragraph}</p>
+        ))}
       </div>
 
       <Separator className="my-12" />
