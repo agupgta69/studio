@@ -5,35 +5,35 @@ import { Twitter, Linkedin, Github, Target } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center space-x-2">
+    <footer className="bg-card border-t py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+            <Link href="/" className="flex items-center space-x-4">
                 <Image 
                   src="/Print_Transparent.svg" 
                   alt="Orcaz Solutions Logo" 
-                  width={32} 
-                  height={32} 
-                  className="h-8 w-auto"
+                  width={80} 
+                  height={80} 
+                  className="h-16 md:h-20 w-auto"
                 />
-                <span className="font-bold">Orcaz Solutions</span>
+                <span className="font-bold text-xl md:text-2xl">Orcaz Solutions</span>
             </Link>
-            <span className="text-sm text-muted-foreground pl-4 border-l border-muted">
-              &copy; {new Date().getFullYear()} Orcaz Solutions. All Rights Reserved.
+            <span className="text-sm text-muted-foreground md:pl-8 md:border-l border-muted text-center md:text-left">
+              &copy; {new Date().getFullYear()} Orcaz Solutions. <br className="md:hidden" /> All Rights Reserved.
             </span>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="h-5 w-5" />
+              <Twitter className="h-6 w-6" />
               <span className="sr-only">Twitter</span>
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Target className="h-5 w-5" />
+              <Target className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
           </div>

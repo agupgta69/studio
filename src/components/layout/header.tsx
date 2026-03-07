@@ -9,18 +9,18 @@ export function Header() {
   return (
     <header className="bg-card border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24 md:h-32">
           <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-3">
               <Image 
                 src="/Print_Transparent.svg" 
                 alt="Orcaz Solutions Logo" 
-                width={48} 
-                height={48} 
-                className="h-12 w-auto"
+                width={96} 
+                height={96} 
+                className="h-20 w-auto md:h-24"
                 priority
               />
-              <span className="font-bold text-xl font-headline">Orcaz Solutions</span>
+              <span className="font-bold text-2xl md:text-4xl font-headline tracking-tight">Orcaz Solutions</span>
             </Link>
           </div>
 
@@ -34,7 +34,7 @@ export function Header() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-8 w-8" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -44,11 +44,11 @@ export function Header() {
                      <Image 
                         src="/Print_Transparent.svg" 
                         alt="Orcaz Solutions Logo" 
-                        width={48} 
-                        height={48} 
-                        className="h-12 w-auto"
+                        width={64} 
+                        height={64} 
+                        className="h-16 w-auto"
                       />
-                     <span className="font-bold text-xl">Orcaz Solutions</span>
+                     <span className="font-bold text-2xl">Orcaz Solutions</span>
                    </Link>
                 </div>
               </SheetContent>
