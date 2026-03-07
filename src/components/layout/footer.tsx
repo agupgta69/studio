@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
-import { Twitter, Linkedin, Github, Target } from "lucide-react";
+import { Twitter, Linkedin, Target } from "lucide-react";
 
 export function Footer() {
   return (
@@ -13,9 +13,9 @@ export function Footer() {
                 <Image 
                   src="/Print_Transparent.svg" 
                   alt="Orcaz Solutions Logo" 
-                  width={80} 
-                  height={80} 
-                  className="h-16 md:h-20 w-auto"
+                  width={96} 
+                  height={96} 
+                  className="h-20 md:h-24 w-auto"
                 />
                 <span className="font-bold text-xl md:text-2xl">Orcaz Solutions</span>
             </Link>
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               <Target className="h-6 w-6" />
-              <span className="sr-only">GitHub</span>
+              <span className="sr-only">Target</span>
             </a>
           </div>
         </div>

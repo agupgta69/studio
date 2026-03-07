@@ -15,9 +15,9 @@ export function Header() {
               <Image 
                 src="/Print_Transparent.svg" 
                 alt="Orcaz Solutions Logo" 
-                width={96} 
-                height={96} 
-                className="h-20 w-auto md:h-24"
+                width={128} 
+                height={128} 
+                className="h-24 w-auto md:h-32"
                 priority
               />
               <span className="font-bold text-2xl md:text-4xl font-headline tracking-tight">Orcaz Solutions</span>
