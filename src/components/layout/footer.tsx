@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import { Mountain, Twitter, Linkedin, Github } from "lucide-react";
+import { Mountain, Twitter, Linkedin, Github, Target } from "lucide-react";
 
 export function Footer() {
   return (
@@ -35,6 +35,3 @@ export function Footer() {
     </footer>
   );
 }
-
-// Fixed missing icon import for consistency, though Github was used before
-import { Target } from "lucide-react";
