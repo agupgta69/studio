@@ -13,9 +13,9 @@ export function Footer() {
                 <Image 
                   src="/Print_Transparent.svg" 
                   alt="Orcaz Solutions Logo" 
-                  width={24} 
-                  height={24} 
-                  className="h-6 w-auto"
+                  width={32} 
+                  height={32} 
+                  className="h-8 w-auto"
                 />
                 <span className="font-bold">Orcaz Solutions</span>
             </Link>

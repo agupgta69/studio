@@ -15,12 +15,12 @@ export function Header() {
               <Image 
                 src="/Print_Transparent.svg" 
                 alt="Orcaz Solutions Logo" 
-                width={32} 
-                height={32} 
-                className="h-8 w-auto"
+                width={48} 
+                height={48} 
+                className="h-12 w-auto"
                 priority
               />
-              <span className="font-bold text-lg font-headline">Orcaz Solutions</span>
+              <span className="font-bold text-xl font-headline">Orcaz Solutions</span>
             </Link>
           </div>
 
@@ -44,11 +44,11 @@ export function Header() {
                      <Image 
                         src="/Print_Transparent.svg" 
                         alt="Orcaz Solutions Logo" 
-                        width={32} 
-                        height={32} 
-                        className="h-8 w-auto"
+                        width={48} 
+                        height={48} 
+                        className="h-12 w-auto"
                       />
-                     <span className="font-bold text-lg">Orcaz Solutions</span>
+                     <span className="font-bold text-xl">Orcaz Solutions</span>
                    </Link>
                 </div>
               </SheetContent>
