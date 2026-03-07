@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
-import { Mountain, Twitter, Linkedin, Github, Target } from "lucide-react";
+import Image from "next/image";
+import { Twitter, Linkedin, Github, Target } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,7 +10,13 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-                <Mountain className="h-6 w-6" />
+                <Image 
+                  src="/Print_Transparent.svg" 
+                  alt="Orcaz Solutions Logo" 
+                  width={24} 
+                  height={24} 
+                  className="h-6 w-auto"
+                />
                 <span className="font-bold">Orcaz Solutions</span>
             </Link>
             <span className="text-sm text-muted-foreground pl-4 border-l border-muted">
