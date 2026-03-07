@@ -9,18 +9,19 @@ export function Header() {
   return (
     <header className="bg-card border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 md:h-32">
+        <div className="flex items-center justify-between h-32 md:h-48">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-3">
               <Image 
                 src="/Print_Transparent.svg" 
                 alt="Orcaz Solutions Logo" 
-                width={128} 
-                height={128} 
-                className="h-24 w-auto md:h-32"
+                width={256} 
+                height={256} 
+                className="h-32 w-auto md:h-44"
                 priority
+                unoptimized
               />
-              <span className="font-bold text-2xl md:text-4xl font-headline tracking-tight">Orcaz Solutions</span>
+              <span className="font-bold text-3xl md:text-5xl font-headline tracking-tight">Orcaz Solutions</span>
             </Link>
           </div>
 
@@ -34,7 +35,7 @@ export function Header() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-8 w-8" />
+                  <Menu className="h-10 w-10" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -44,9 +45,10 @@ export function Header() {
                      <Image 
                         src="/Print_Transparent.svg" 
                         alt="Orcaz Solutions Logo" 
-                        width={64} 
-                        height={64} 
-                        className="h-16 w-auto"
+                        width={128} 
+                        height={128} 
+                        className="h-20 w-auto"
+                        unoptimized
                       />
                      <span className="font-bold text-2xl">Orcaz Solutions</span>
                    </Link>
