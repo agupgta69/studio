@@ -5,6 +5,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NextImage from "next/image";
+
 export function Header() {
   return (
     <header className="bg-card border-b sticky top-0 z-50">
@@ -12,14 +13,14 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
-            <NextImage
-  src="/Print_Transparent.svg"
-  alt="Orcas Solutions Logo"
-  width={150}
-  height={100}
-  priority
-/>
-              <span className="font-bold text-lg font-headline">OrcaS Solutions</span>
+              <NextImage
+                src="/Print_Transparent.svg"
+                alt="Orcaz Solutions Logo"
+                width={150}
+                height={100}
+                priority
+              />
+              <span className="font-bold text-lg font-headline">Orcaz Solutions</span>
             </Link>
           </div>
 
@@ -41,7 +42,7 @@ export function Header() {
                 <div className="flex flex-col space-y-6 pt-10">
                    <Link href="/" className="flex items-center space-x-2">
                      <Mountain className="h-6 w-6" />
-                     <span className="font-bold text-lg">OrcaS Solutions</span>
+                     <span className="font-bold text-lg">Orcaz Solutions</span>
                    </Link>
                 </div>
               </SheetContent>

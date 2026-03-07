@@ -10,10 +10,10 @@ export function Footer() {
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex items-center space-x-2">
                 <Mountain className="h-6 w-6" />
-                <span className="font-bold">OrcaS Solutions</span>
+                <span className="font-bold">Orcaz Solutions</span>
             </Link>
             <span className="text-sm text-muted-foreground pl-4 border-l border-muted">
-              &copy; {new Date().getFullYear()} OrcaS Solutions. All Rights Reserved.
+              &copy; {new Date().getFullYear()} Orcaz Solutions. All Rights Reserved.
             </span>
           </div>
           <div className="flex items-center space-x-4">
@@ -26,7 +26,7 @@ export function Footer() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Github className="h-5 w-5" />
+              <Target className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </a>
           </div>
@@ -35,3 +35,6 @@ export function Footer() {
     </footer>
   );
 }
+
+// Fixed missing icon import for consistency, though Github was used before
+import { Target } from "lucide-react";
